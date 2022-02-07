@@ -1,23 +1,19 @@
 # supervised_machine_learning
 
-
-# Web-Design-Challenge
-
 # Intro
 
 The purpose of this project was to use introduce some concept of Supervised Learning in Machine Learning Models.
 The two models being used are:
 - Random Forest
 &
-- Logistic Regresson
+- Logistic Regression
 
 # Data Set 
 
 ![Train Data](2019loans.csv)
 ![Test Data](2020Q1loans)
 
-
-The data set was a collection of user bank/credit information that will be evaluated using the above machine learning models to guage which accounts are either high or low risk for a loan.
+The data set was a collection of user bank/credit information that will be evaluated using the above machine learning models to gauge which accounts are either high or low risk for a loan.
 
 # Method
 
@@ -28,10 +24,9 @@ Afterwards the data is separated into Test and Train sets, fit to two separate m
 Once complete we are able to observe the results but this instance is completed with data that is not scaled, meaning that columns within the data set that have largely differing ranges will have separate impacts on the result from the Models.
 > e.g. a column ranging from 1-100 will have a smaller impact than one ranging from 1-1,000,000.
 
-This will not due for the creation of an accurate model, with exeption to the Random Forest Model, so we move to scaling the data and re-training the models to display the overall change in accuracy after the impact of each feature within the data has been normalized.
+This will not due for the creation of an accurate model, with exception to the Random Forest Model, so we move to scaling the data and re-training the models to display the overall change in accuracy after the impact of each feature within the data has been normalized.
 
-> Exception Explanation: Random Forests Models don't take into account the relationship betwee each predictor variable and the response so scaling the data before running usually produces better results.
-
+> Exception Explanation: Random Forests Models don't take into account the relationship between each predictor variable and the response so scaling the data before running usually produces better results.
 
 
 # Analysis
@@ -49,7 +44,7 @@ This will not due for the creation of an accurate model, with exeption to the Ra
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-One of the aspects of machine learning is testing models and data to conclude which combination works best wihtout over fitting the data and producing a useless model. When comparing the scores between types of scaled data, the Standard Scaler produced better results with the Logistic Regression Model improving by 11% after scaling. Moving some a model that flips a coin to a model that makes a educated yet uncertain guess.
+One of the aspects of machine learning is testing models and data to conclude which combination works best without over fitting the data and producing a useless model. When comparing the scores between types of scaled data, the Standard Scaler produced better results with the Logistic Regression Model improving by 11% after scaling. Moving from a model that flips a coin to a model that makes an educated yet uncertain guess.
 
 When running the unscaled data the results for the Random Forest Model were better with the unscaled data but not significantly, 0.1%, meaning that this data simply doesn't fit a random forest model.
 
