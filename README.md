@@ -35,15 +35,26 @@ This will not due for the creation of an accurate model, with exeption to the Ra
 
 
 # Analysis
-When running the unscaled data the results for 
 
+## Results:
+
+### Logistic Regression:
+- Unscaled Data: 52.6%
+- Min Max Scaler: 59.5% 
+- Standard Scaler: 66.1%
+### Random Forest Model:
+- Unscaled Data: 61.7%
+- Min Max Scaler: 61.8%
+- Standard Scaler: 61.7%
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+One of the aspects of machine learning is testing models and data to conclude which combination works best wihtout over fitting the data and producing a useless model. When comparing the scores between types of scaled data, the Standard Scaler produced better results with the Logistic Regression Model improving by 11% after scaling. Moving some a model that flips a coin to a model that makes a educated yet uncertain guess.
+
+When running the unscaled data the results for the Random Forest Model were better with the unscaled data but not significantly, 0.1%, meaning that this data simply doesn't fit a random forest model.
 
 # Conclusion
 
-Using HTML and CSS to display information is a major component of the age we live in. anytime someone searches for information or even used the web they're looking at a programs interpretation of styles and code to transfer information. After completing this assignment, I don't think that I'll be able to see a web page without think about the code and styles used to make the page appear as it does.
-
-Making sure that the aspects needed in each page were behaving as desired or pinpointing the part of the code I wanted to style using CSS was a challenge due mostly to my novice-level experience in this coding language. I enjoyed overcoming obstacles that were almost certainly constructed by myself and also by accident. The relief of getting something to work after fiddling with it for an hour was a confusing mix of accomplishment and shame.
-
-In the end, once I had all seven pages set up with links to each and feature such as click-able photos that take one to the corresponding web page and a pop-out button on the Nav-bar, it felt pretty nice to have tackled what at this point in time is a big concept but in retrospect will probably be the equivalent to a "Hello World!" statement.
+In this project we observed a seemingly useful Logistic Regression Model using Standard Scaled data and a Random Forest Model that perform equally with both types of data (scaled & unscaled). The next step toward creating an improved model would be Cross Validating parameters and evaluating resulting scores, implementing Feature Reduction, testing different models, or even changing perspective and asking a different question after considering the story of the data.
 
 
