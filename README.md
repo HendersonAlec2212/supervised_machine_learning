@@ -26,7 +26,7 @@ Once complete we are able to observe the results but this instance is completed 
 
 This will not due for the creation of an accurate model, with exception to the Random Forest Model, so we move to scaling the data and re-training the models to display the overall change in accuracy after the impact of each feature within the data has been normalized.
 
-> Exception Explanation: Random Forests Models don't take into account the relationship between each predictor variable and the response so scaling the data before running usually produces better results.
+> Exception Explanation: Random Forests Models don't take into account the relationship between each predictor variable and the response so scaling the data before running the model often doesn't impact the results.
 
 
 # Analysis
